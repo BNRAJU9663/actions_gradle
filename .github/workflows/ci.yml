@@ -31,13 +31,13 @@ jobs:
     - name: find jarfile
       run: ls ./build/libs/
       
-#     - name: Build and push Docker image
-#       uses: mr-smithers-excellent/docker-build-push@v4
-#       with: 
-#         image: bnraju9663/actions
-#         registry: docker.io
-#         username: ${{ secrets.DOCKER_USERNAME }}
-#         password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Build and push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with: 
+        image: bnraju9663/actions
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
         
         
 
